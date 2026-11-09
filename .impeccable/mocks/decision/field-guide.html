@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Field-guide pages</title>
+<style>
+:root{--canvas:#f2f5f9;--surface:#fbfcfe;--sunken:#e8ecf4;--hover:#ebeff6;--border:#d3d9e3;--strong:#778193;--text:#171e2c;--muted:#555e6f;--primary:#2b4db5;--container:#dfeaff;--on-container:#1c3788;--success:#ddf7e6;--on-success:#125b3a;--danger-c:#ffe8e6;--on-danger-c:#8d2521}
+*{box-sizing:border-box}
+html,body{margin:0;width:1440px;height:900px;overflow:hidden;background:var(--canvas);color:var(--text);font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+.bar{height:56px;display:flex;align-items:center;gap:24px;padding:0 28px;background:var(--surface);border-bottom:1px solid var(--border)}
+.brand{font-weight:600;font-size:17px}
+.bar .s{margin-left:auto;width:280px;height:34px;border:1px solid var(--strong);border-radius:8px;padding:0 12px;display:flex;align-items:center;color:var(--muted);font-size:14px}
+.wrap{display:grid;grid-template-columns:240px minmax(0,1fr) 220px;height:844px}
+nav{padding:20px 16px;border-right:1px solid var(--border);background:var(--surface)}
+nav h4{margin:16px 8px 4px;font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+nav a{display:block;padding:5px 8px;border-radius:6px;color:var(--text);text-decoration:none;font-size:14px}
+nav a.on{background:var(--container);color:var(--on-container);font-weight:600}
+main{padding:36px 56px;overflow:hidden}
+.crumb{font-size:13px;color:var(--muted)}
+h1{font-size:34px;letter-spacing:-.02em;margin:4px 0 6px;line-height:1.15}
+.lede{color:var(--muted);margin:0 0 20px;max-width:64ch}
+.use{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px;max-width:780px}
+.use div{border-radius:10px;padding:12px 14px;font-size:14px}
+.use .y{background:var(--success);color:var(--on-success)}
+.use .n{background:var(--danger-c);color:var(--on-danger-c)}
+.use b{display:block;margin-bottom:2px}
+.tray{max-width:780px;border:1px solid var(--border);border-radius:14px;background:var(--surface);overflow:hidden}
+.tray .tools{display:flex;gap:8px;padding:8px 12px;border-bottom:1px solid var(--border);font-size:13px;color:var(--muted)}
+.tray .tools span{padding:2px 8px;border-radius:6px;border:1px solid var(--border)}
+.tray .tools span.on{background:var(--container);color:var(--on-container);border-color:transparent}
+.stage{background:var(--sunken);padding:36px;display:grid;place-items:center;box-shadow:inset 0 1px 2px var(--hover)}
+.field{width:340px}
+.field label{font-size:14px;font-weight:500;display:block;margin-bottom:6px}
+.inp{height:40px;border:2px solid #3760d8;border-radius:8px;background:var(--surface);padding:0 12px;display:flex;align-items:center;outline:2px solid #3760d8;outline-offset:1px}
+.list{margin-top:6px;border-radius:10px;background:var(--surface);box-shadow:inset 0 1px 0 #fff,0 4px 8px rgba(23,30,44,.06),0 12px 32px rgba(23,30,44,.12);padding:4px}
+.list div{padding:7px 10px;border-radius:6px;font-size:14px}
+.list .a{background:var(--container);color:var(--on-container)}
+.tray pre{margin:0;padding:12px 16px;font:13px ui-monospace,monospace;color:var(--text);background:var(--surface)}
+h2{font-size:20px;margin:28px 0 8px}
+.anat{display:flex;gap:8px;flex-wrap:wrap;font:12.5px ui-monospace,monospace}
+.anat span{border:1px solid var(--border);border-radius:6px;padding:2px 8px;background:var(--surface)}
+aside{padding:36px 20px;font-size:13px}
+aside b{display:block;color:var(--muted);font-weight:600;margin-bottom:8px}
+aside a{display:block;padding:4px 0 4px 10px;border-left:2px solid var(--border);color:var(--muted);text-decoration:none}
+aside a.on{border-color:var(--primary);color:var(--text);font-weight:600}
+</style></head><body>
+<div class="bar"><span class="brand">Prava UI</span><span style="color:var(--muted)">Get started · Components · Guides</span><div class="s">Search</div></div>
+<div class="wrap">
+<nav><h4>Forms</h4><a>Checkbox</a><a class="on">Combobox</a><a>DatePicker</a><a>FileUpload</a><a>FormField</a><a>Input</a><a>NumberInput</a><a>Select</a><a>Slider</a><h4>Overlays</h4><a>Dialog</a><a>Drawer</a><a>DropdownMenu</a><a>Popover</a><a>Tooltip</a></nav>
+<main>
+<div class="crumb">Components / Forms</div>
+<h1>Combobox</h1>
+<p class="lede">Lets people choose from a list by typing, including results a server sends back.</p>
+<div class="use"><div class="y"><b>Use it for</b>Long lists, search-as-you-type, and values from a server.</div><div class="n"><b>Not for</b>Fewer than ten fixed options. Use Select or RadioGroup.</div></div>
+<div class="tray"><div class="tools"><span class="on">Light</span><span>Dark</span><span>RTL</span><span style="margin-left:auto">Copy code</span></div>
+<div class="stage"><div class="field"><label>City</label><div class="inp">Pu</div><div class="list"><div class="a">Pune</div><div>Puducherry</div><div>Purnia</div></div></div></div>
+<pre>&lt;Combobox label="City" options={cities} /&gt;</pre></div>
+<h2>Anatomy</h2>
+<div class="anat"><span>.prava-combobox</span><span>__input</span><span>__popup</span><span>__list</span><span>__option</span><span>__chip</span></div>
+</main>
+<aside><b>On this page</b><a class="on">When to use</a><a>Example</a><a>Anatomy</a><a>Props</a><a>Keyboard</a><a>Accessibility</a><a>RTL</a></aside>
+</div>
+</body></html>

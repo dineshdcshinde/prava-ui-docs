@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Live specimen home</title>
+<style>
+:root{--canvas:#f2f5f9;--surface:#fbfcfe;--sunken:#e8ecf4;--raised:#dfe5ef;--border:#d3d9e3;--strong:#778193;--text:#171e2c;--muted:#555e6f;--primary:#2b4db5;--container:#dfeaff;--on-container:#1c3788;--success:#ddf7e6;--on-success:#125b3a}
+*{box-sizing:border-box}
+html,body{margin:0;width:1440px;height:900px;overflow:hidden;background:var(--canvas);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.bar{height:56px;display:flex;align-items:center;gap:28px;padding:0 40px}
+.brand{font-weight:600;font-size:17px}
+.bar a{color:var(--muted);text-decoration:none;font-weight:500}
+.bar .s{margin-left:auto;width:260px;height:34px;border:1px solid var(--strong);border-radius:8px;padding:0 12px;display:flex;align-items:center;color:var(--muted);font-size:14px;background:var(--surface)}
+.main{display:grid;grid-template-columns:400px 1fr;gap:56px;padding:48px 40px 0}
+h1{font-size:44px;line-height:1.08;letter-spacing:-.03em;margin:0 0 16px}
+.pitch p{color:var(--muted);font-size:17px;margin:0 0 24px}
+code{display:block;font:14px ui-monospace,monospace;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 12px;margin-bottom:12px}
+.btns{display:flex;gap:8px}
+.btn{height:40px;padding:0 16px;border-radius:8px;display:inline-flex;align-items:center;font-weight:600;font-size:14px}
+.btn.p{background:var(--primary);color:#fafcff;box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 1px 2px rgba(23,30,44,.2)}
+.btn.o{border:1px solid var(--strong);background:var(--surface)}
+.facts{margin-top:28px;display:grid;gap:8px;font-size:14px;color:var(--muted)}
+.frame{border-radius:16px;background:var(--surface);box-shadow:inset 0 1px 0 #fff,0 4px 8px rgba(23,30,44,.06),0 12px 32px rgba(23,30,44,.12);overflow:hidden;position:relative}
+.fbar{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--border);font-size:13px;color:var(--muted)}
+.seg{display:flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-left:auto}
+.seg span{padding:3px 10px}.seg .on{background:var(--container);color:var(--on-container);font-weight:600}
+.app{display:grid;grid-template-columns:180px 1fr;height:640px}
+.app nav{background:var(--sunken);padding:16px 10px;font-size:14px}
+.app nav div{padding:6px 10px;border-radius:6px}.app nav .on{background:var(--surface);font-weight:600}
+.pane{padding:24px 28px;display:grid;gap:18px;align-content:start}
+.pane h2{margin:0;font-size:20px}
+.tabsx{display:flex;gap:20px;border-bottom:1px solid var(--border);font-size:14px}
+.tabsx span{padding:8px 0;color:var(--muted)}.tabsx .on{color:var(--primary);box-shadow:inset 0 -2px 0 var(--primary);font-weight:600}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.f label{display:block;font-size:13px;font-weight:500;margin-bottom:6px}
+.inp{height:40px;border:1px solid var(--strong);border-radius:8px;padding:0 12px;display:flex;align-items:center;font-size:14px;background:var(--surface)}
+.sw{display:flex;align-items:center;gap:10px;font-size:14px}
+.track{width:36px;height:20px;border-radius:999px;background:var(--primary);position:relative}.track::after{content:"";position:absolute;right:2px;top:2px;width:16px;height:16px;border-radius:50%;background:#fff}
+.alert{background:var(--success);color:var(--on-success);border-radius:10px;padding:10px 14px;font-size:14px}
+.tag{position:absolute;font:600 11.5px system-ui;background:var(--primary);color:#fafcff;border-radius:6px;padding:2px 8px;box-shadow:0 2px 6px rgba(23,30,44,.2)}
+.ring{position:absolute;border:2px solid var(--primary);border-radius:10px;pointer-events:none}
+</style></head><body>
+<div class="bar"><span class="brand">Prava UI</span><a>Get started</a><a>Components</a><a>Guides</a><div class="s">Search</div></div>
+<div class="main">
+<div class="pitch"><h1>Accessible React components that look finished</h1>
+<p>Everything on the right is real Prava UI. Point at any part to see its name, then open its page.</p>
+<code>npm install prava-ui@next</code>
+<div class="btns"><span class="btn p">Get started</span><span class="btn o">Browse components</span></div>
+<div class="facts"><span>No Tailwind setup or provider needed</span><span>Keyboard, screen reader and RTL built in</span><span>One token file restyles everything</span></div></div>
+<div class="frame"><div class="fbar">Live specimen: account settings<div class="seg"><span class="on">Light</span><span>Dark</span><span>RTL</span></div></div>
+<div class="app"><nav><div class="on">Profile</div><div>Notifications</div><div>Billing</div><div>Team</div></nav>
+<div class="pane"><h2>Profile</h2><div class="tabsx"><span class="on">General</span><span>Security</span><span>Sessions</span></div>
+<div class="row"><div class="f"><label>Full name</label><div class="inp">Asha Rao</div></div><div class="f"><label>Work email</label><div class="inp">asha@example.com</div></div></div>
+<div class="row"><div class="f"><label>Time zone</label><div class="inp">Asia/Kolkata</div></div><div class="f"><label>Birth date</label><div class="inp">1992-04-18</div></div></div>
+<div class="sw"><span class="track"></span>Email me when someone mentions me</div>
+<div class="alert">Saved. Your profile is up to date.</div>
+<div class="btns"><span class="btn p">Save changes</span><span class="btn o">Cancel</span></div></div></div>
+<div class="ring" style="left:206px;top:162px;width:290px;height:70px"></div><div class="tag" style="left:206px;top:140px">Input</div>
+<div class="tag" style="left:206px;top:392px">Switch</div></div>
+</div>
+</body></html>

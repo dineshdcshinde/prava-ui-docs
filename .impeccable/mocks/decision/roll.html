@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Search-first index</title>
+<style>
+:root{--canvas:#f2f5f9;--surface:#fbfcfe;--sunken:#e8ecf4;--border:#d3d9e3;--strong:#778193;--text:#171e2c;--muted:#555e6f;--primary:#2b4db5;--container:#dfeaff;--on-container:#1c3788}
+*{box-sizing:border-box}
+html,body{margin:0;width:1440px;height:900px;overflow:hidden;background:var(--canvas);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.bar{height:60px;display:flex;align-items:center;gap:32px;padding:0 40px;background:var(--surface);border-bottom:1px solid var(--border);box-shadow:inset 0 -1px 0 #fff}
+.brand{font-weight:600;font-size:17px;letter-spacing:-.01em}
+.tabs{display:flex;gap:4px}
+.tabs a{padding:7px 12px;border-radius:8px;color:var(--muted);text-decoration:none;font-weight:500}
+.tabs a.on{color:var(--on-container);background:var(--container)}
+.search{margin-left:auto;width:340px;height:36px;border:1px solid var(--strong);border-radius:8px;background:var(--surface);display:flex;align-items:center;padding:0 12px;color:var(--muted);box-shadow:inset 0 1px 2px var(--sunken)}
+.search kbd{margin-left:auto;font:12px ui-monospace,monospace;border:1px solid var(--border);border-radius:4px;padding:1px 6px;background:var(--sunken)}
+.mode{display:flex;gap:8px;color:var(--muted);font-size:13px}
+.lead{padding:56px 40px 32px;display:grid;grid-template-columns:1fr 520px;gap:48px;align-items:end;max-width:1360px}
+h1{font-size:40px;line-height:1.1;letter-spacing:-.025em;margin:0 0 12px;max-width:16ch}
+.lead p{margin:0;color:var(--muted);font-size:17px;max-width:56ch}
+.install{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px 20px;box-shadow:inset 0 1px 0 #fff,0 1px 2px rgba(23,30,44,.05),0 4px 12px rgba(23,30,44,.05)}
+.install code{display:block;font:14px ui-monospace,monospace;background:var(--sunken);border-radius:8px;padding:10px 12px;margin:8px 0 12px}
+.install .row{display:flex;gap:8px}
+.btn{height:36px;padding:0 14px;border-radius:8px;display:inline-flex;align-items:center;font-weight:600;font-size:14px}
+.btn.p{background:var(--primary);color:#fafcff;box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 1px 2px rgba(23,30,44,.2)}
+.btn.o{border:1px solid var(--strong);background:var(--surface)}
+.idx{padding:0 40px;display:grid;grid-template-columns:repeat(4,1fr);gap:28px 40px;max-width:1360px}
+.idx h2{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.idx ul{list-style:none;margin:0;padding:0}
+.idx li{display:grid;grid-template-columns:118px 1fr;gap:8px;padding:5px 0;font-size:14px}
+.idx li b{font-weight:600;color:var(--text)}
+.idx li span{color:var(--muted)}
+.idx li.hit{background:var(--container);border-radius:6px;margin:0 -8px;padding:5px 8px}
+.idx li.hit b{color:var(--on-container)}
+.new{font-size:11px;font-weight:600;color:var(--on-container);background:var(--container);border-radius:999px;padding:0 6px;margin-left:6px}
+</style></head><body>
+<div class="bar"><span class="brand">Prava UI</span>
+<nav class="tabs"><a href="#">Get started</a><a class="on" href="#">Components</a><a href="#">Guides</a></nav>
+<div class="search">Search components and props<kbd>Ctrl K</kbd></div>
+<div class="mode">Light · RTL</div></div>
+<section class="lead"><div><h1>Accessible React components that look finished</h1>
+<p>No Tailwind setup, no CSS-in-JS runtime. Keyboard, screen reader and RTL support are part of every component, and one CSS file of tokens restyles all of them.</p></div>
+<div class="install"><strong>Install</strong><code>npm install prava-ui@next</code><div class="row"><span class="btn p">Get started</span><span class="btn o">Theming guide</span></div></div></section>
+<section class="idx">
+<div><h2>Forms</h2><ul>
+<li><b>Checkbox</b><span>Binary choice, indeterminate too</span></li>
+<li class="hit"><b>Combobox</b><span>Type to choose, server results</span></li>
+<li><b>DatePicker</b><span>A date or range, locale aware</span></li>
+<li><b>FileUpload</b><span>Choose or drop files</span></li>
+<li><b>FormField</b><span>Label, help and error for any control</span></li>
+<li><b>Input</b><span>Single-line text with floating label</span></li>
+<li><b>NumberInput</b><span>Locale-formatted numbers</span></li>
+<li><b>Select</b><span>One or many from a list</span></li>
+<li><b>Slider</b><span>A value or range on a scale</span></li></ul></div>
+<div><h2>Overlays</h2><ul>
+<li><b>Dialog</b><span>Modal or non-modal, native dialog</span></li>
+<li><b>Drawer</b><span>Panel from any edge</span></li>
+<li><b>DropdownMenu</b><span>Actions from a trigger</span></li>
+<li><b>Popover</b><span>Anchored content</span></li>
+<li><b>Tooltip</b><span>Short supplementary text</span></li></ul>
+<h2 style="margin-top:20px">Navigation</h2><ul>
+<li><b>Accordion</b><span>Disclose sections</span></li>
+<li><b>Breadcrumb</b><span>Where you are</span></li>
+<li><b>Pagination</b><span>Move through pages</span></li>
+<li><b>Tabs</b><span>Switch related panels</span></li></ul></div>
+<div><h2>Display</h2><ul>
+<li><b>Avatar</b><span>A person or entity</span></li>
+<li><b>Badge</b><span>Count or status</span></li>
+<li><b>Card</b><span>Group related content</span></li>
+<li><b>Table</b><span>Structured data, sticky header</span></li>
+<li><b>Tag</b><span>Removable or selectable label</span></li>
+<li><b>Progress</b><span>Task progress</span></li>
+<li><b>Skeleton</b><span>Loading placeholder</span></li>
+<li><b>Spinner</b><span>Ongoing process</span></li></ul></div>
+<div><h2>Feedback</h2><ul>
+<li><b>Alert</b><span>Contextual message</span></li>
+<li><b>EmptyState</b><span>Nothing here yet</span></li>
+<li><b>Toast</b><span>Transient notification</span></li></ul>
+<h2 style="margin-top:20px">Layout</h2><ul>
+<li><b>Container</b><span>Centered region</span></li>
+<li><b>Grid</b><span>Responsive columns</span></li>
+<li><b>Stack</b><span>Row or column with gaps</span></li></ul></div>
+</section>
+</body></html>

@@ -1,0 +1,45 @@
+{
+  "title": "Choose the docs site's structure",
+  "question": "The look stays Prava's own Cobalt Porcelain. These are three different page structures for the docs site. Lock one, steer it, or re-roll. The catalog's outside worlds (an acetate-tab manual, a plate annual, build instructions) were weighed and declined, because each would bring its own visual identity, and you chose Prava's.",
+  "options": [
+    {
+      "id": "roll",
+      "kind": "assigned",
+      "label": "Search-first index",
+      "kicker": "THE ROLL",
+      "lineage": "a reference book's index and thumb tabs",
+      "thesis": "Any component in two keystrokes: the home page is a searchable A to Z index, and each component page is split into Examples, Props and Accessibility tabs under a sticky title bar.",
+      "palette": ["#F2F5F9", "#FBFCFE", "#2B4DB5", "#171E2C", "#DFEAFF"],
+      "materials": ["glazed porcelain surfaces", "cobalt selection"],
+      "viewport": "A top bar with Get started, Components and Guides, plus a search field. Below it, a short pitch and the install command, then every component in grouped columns with its one-line purpose.",
+      "risk": "Props sit behind a tab, so evaluators who only skim may not see how complete the API is.",
+      "html": ".impeccable/mocks/decision/roll.html"
+    },
+    {
+      "id": "field-guide",
+      "kind": "dealt",
+      "label": "Field-guide pages",
+      "lineage": "naturalist field guides: identify, then detail",
+      "thesis": "Each component page answers in a fixed order: when to use it, a live example with inline dark and RTL toggles, its anatomy with slot classes labeled, props, then keyboard behavior.",
+      "palette": ["#F2F5F9", "#FBFCFE", "#2B4DB5", "#171E2C", "#E8ECF4"],
+      "materials": ["sunken example trays", "hairline anatomy labels"],
+      "viewport": "Left nav grouped by category, a reading column opening with the component name and a 'Use it for / Not for' pair, the live example in a porcelain tray, and an 'On this page' list on the right.",
+      "risk": "Long pages, and every component needs its usage guidance and anatomy written.",
+      "html": ".impeccable/mocks/decision/field-guide.html"
+    },
+    {
+      "id": "specimen",
+      "kind": "dealt",
+      "label": "Live specimen home",
+      "lineage": "a type foundry's specimen sheet",
+      "thesis": "The home page is a real, working settings screen built entirely from Prava components. Hovering any part names it and links to its page, so the library proves itself before a word of pitch.",
+      "palette": ["#F2F5F9", "#FBFCFE", "#2B4DB5", "#171E2C", "#C22826"],
+      "materials": ["one live composed screen", "cobalt name tags"],
+      "viewport": "A one-line pitch with install and Get started on the left. The live settings specimen fills the right two-thirds, with a light, dark and RTL switcher on its frame.",
+      "risk": "The specimen has to be kept working as components change, and the home page is heavier to load.",
+      "html": ".impeccable/mocks/decision/specimen.html"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "canon": false
+}
