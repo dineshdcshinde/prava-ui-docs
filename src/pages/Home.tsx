@@ -16,7 +16,7 @@ import { ArrowIcon, CheckIcon } from "../ui/icons";
 import { Catalogue } from "./Catalogue";
 import { Specimen } from "./Specimen";
 
-const INSTALL = "npm install prava-ui@next";
+const INSTALL = "npm install prava-ui@next react react-dom";
 
 const INVITE = `import { Button, Dialog, DialogClose, Input } from "prava-ui";
 

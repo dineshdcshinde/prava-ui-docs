@@ -1,19 +1,17 @@
 # prava-ui-docs
 
-Docs and playground site for Prava UI (v1 components). Runs on **React 18.3** and is built only from `prava-ui` components, consumed through `npm link`.
+Docs and playground site for Prava UI (v1 components). Runs on **React 18.3** and is built only from `prava-ui` components, consumed from the local `../prava-ui` folder (`"prava-ui": "file:../prava-ui"` in `package.json`).
 
 ## Setup
 
 ```sh
-# 1. In the library: build and register the global link
+# 1. In the library: build it
 cd C:\prava-ui
 npm run build
-npm link
 
-# 2. In this site: install and link
+# 2. In this site: install and run
 cd C:\prava-ui-docs
-npm install
-npm run link:prava   # re-run after every `npm install`, which removes the link
+npm install   # package.json points "prava-ui" at ../prava-ui, so the link survives every install
 npm run dev
 ```
 
@@ -38,6 +36,7 @@ export default {
 
 The page shows each example in a card, plus the file's source under "Example source". The header toggles theme and RTL through `PravaProvider`.
 
-## npm link notes
+## Local library notes
 
-- `vite.config.ts` dedupes `react`/`react-dom` and `tsconfig.json` maps the React types, because the linked library has React 19 in its own `node_modules`. Real consumers who run `npm install prava-ui` don't need either.
+- The library's own package name is now `@prava-ui/react`. This site still imports it as `prava-ui`, and the `file:` dependency maps that name to the local folder.
+- `vite.config.ts` dedupes `react`/`react-dom` and `tsconfig.json` maps the React types, because the linked library has React 19 in its own `node_modules`. Real consumers who install from npm don't need either.

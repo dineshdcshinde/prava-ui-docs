@@ -48,7 +48,12 @@ export function GetStarted() {
           <span className="step__n">1</span>
           <div>
             <h2>Install</h2>
-            <p>Prava UI needs React 18.2 or newer, including React 19.</p>
+            <p>
+              Prava UI needs React and React DOM 18.2 or newer, including React 19. Install them together with Prava
+              UI:
+            </p>
+            <CodeBlock lang="sh" code="npm install prava-ui@next react react-dom" />
+            <p>If your project already has React 18.2 or newer, you only need Prava UI:</p>
             <CodeBlock lang="sh" code="npm install prava-ui@next" />
           </div>
         </section>

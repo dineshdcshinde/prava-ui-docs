@@ -443,3 +443,5 @@ a { color: inherit; }
 .code--compact pre { white-space: pre-wrap; word-break: break-word; }
 .hero h1 { font-size: clamp(2.5rem, 4.6vw, 3.875rem); }
 .hero h1 em { background: none; text-decoration: underline; text-decoration-color: var(--prava-color-primary-container); text-decoration-thickness: 0.14em; text-underline-offset: 0.1em; text-decoration-skip-ink: none; }
+.install { max-inline-size: 100%; }
+.install code { overflow-wrap: anywhere; }
