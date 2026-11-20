@@ -1,11 +1,11 @@
-import { FormField } from "prava-ui";
+import { FormField } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "FormField",
   group: "Forms",
   description: "Wires a label, description, and error to any control.",
-  importPath: "prava-ui/form-field",
+  importPath: "@pravalabs/ui/form-field",
   examples: [
     {
       title: "Wrapping a native control",

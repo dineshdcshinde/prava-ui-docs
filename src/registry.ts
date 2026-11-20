@@ -6,7 +6,7 @@ export type ComponentDoc = {
   name: string;
   group: "Layout" | "Forms" | "Feedback" | "Overlays" | "Navigation" | "Display" | "Configuration";
   description: string;
-  /** Subpath import, e.g. "prava-ui/button". */
+  /** Subpath import, e.g. "@pravalabs/ui/button". */
   importPath: string;
   examples: Example[];
 };

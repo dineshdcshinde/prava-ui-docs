@@ -1,11 +1,11 @@
-import { Skeleton, Stack } from "prava-ui";
+import { Skeleton, Stack } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Skeleton",
   group: "Feedback",
   description: "Reserves space for content that is still loading.",
-  importPath: "prava-ui/skeleton",
+  importPath: "@pravalabs/ui/skeleton",
   examples: [
     {
       title: "Shapes",

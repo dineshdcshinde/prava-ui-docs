@@ -1,4 +1,4 @@
-import { RadioGroup } from "prava-ui";
+import { RadioGroup } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 const options = [
@@ -11,7 +11,7 @@ export default {
   name: "RadioGroup",
   group: "Forms",
   description: "Picks exactly one option; arrow keys move between options.",
-  importPath: "prava-ui/radio-group",
+  importPath: "@pravalabs/ui/radio-group",
   examples: [
     {
       title: "Vertical",

@@ -1,11 +1,11 @@
-import { Button, Dialog, DialogClose, Input } from "prava-ui";
+import { Button, Dialog, DialogClose, Input } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Dialog",
   group: "Overlays",
   description: "A modal window that traps focus and closes on Escape.",
-  importPath: "prava-ui/dialog",
+  importPath: "@pravalabs/ui/dialog",
   examples: [
     {
       title: "Basic",

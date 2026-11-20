@@ -1,11 +1,11 @@
-import { Button, Stack, dismissToast, toast } from "prava-ui";
+import { Button, Stack, dismissToast, toast } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Toaster",
   group: "Feedback",
   description: "Mount <Toaster /> once, then call toast() from anywhere.",
-  importPath: "prava-ui/toast",
+  importPath: "@pravalabs/ui/toast",
   examples: [
     {
       title: "Tones",

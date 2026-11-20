@@ -1,11 +1,11 @@
-import { Checkbox, Stack } from "prava-ui";
+import { Checkbox, Stack } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Checkbox",
   group: "Forms",
   description: "A binary or mixed choice.",
-  importPath: "prava-ui/checkbox",
+  importPath: "@pravalabs/ui/checkbox",
   examples: [
     {
       title: "States",

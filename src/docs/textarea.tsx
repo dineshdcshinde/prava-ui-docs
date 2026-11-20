@@ -1,11 +1,11 @@
-import { Textarea } from "prava-ui";
+import { Textarea } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Textarea",
   group: "Forms",
   description: "A multiline field that grows with its content between rows and maxRows.",
-  importPath: "prava-ui/textarea",
+  importPath: "@pravalabs/ui/textarea",
   examples: [
     {
       title: "Auto-growing",

@@ -1,11 +1,11 @@
-import { Label, Stack } from "prava-ui";
+import { Label, Stack } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Label",
   group: "Forms",
   description: "Names a form control, with an optional required cue.",
-  importPath: "prava-ui/label",
+  importPath: "@pravalabs/ui/label",
   examples: [
     {
       title: "With a native control",

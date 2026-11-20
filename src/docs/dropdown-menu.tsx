@@ -1,11 +1,11 @@
-import { Button, DropdownMenu, toast } from "prava-ui";
+import { Button, DropdownMenu, toast } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "DropdownMenu",
   group: "Overlays",
   description: "A menu of actions; arrow keys, Home/End, and Escape supported.",
-  importPath: "prava-ui/dropdown-menu",
+  importPath: "@pravalabs/ui/dropdown-menu",
   examples: [
     {
       title: "Actions, groups, separator",

@@ -1,11 +1,11 @@
-import { Button, Popover } from "prava-ui";
+import { Button, Popover } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Popover",
   group: "Overlays",
   description: "Non-modal floating content anchored to a trigger.",
-  importPath: "prava-ui/popover",
+  importPath: "@pravalabs/ui/popover",
   examples: [
     {
       title: "Basic",

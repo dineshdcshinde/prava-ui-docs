@@ -1,11 +1,11 @@
-import { Button, Stack, Tooltip } from "prava-ui";
+import { Button, Stack, Tooltip } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Tooltip",
   group: "Overlays",
   description: "A short hint on hover or keyboard focus.",
-  importPath: "prava-ui/tooltip",
+  importPath: "@pravalabs/ui/tooltip",
   examples: [
     {
       title: "Placements",

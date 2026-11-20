@@ -1,4 +1,4 @@
-/* Site chrome only. Component visuals come from prava-ui; every color here is a Prava token. */
+/* Site chrome only. Component visuals come from @pravalabs/ui; every color here is a Prava token. */
 :root {
   --site-font: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --site-mono: "Geist Mono", ui-monospace, "Cascadia Code", Menlo, monospace;

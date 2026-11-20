@@ -8,7 +8,7 @@ import {
   TabList,
   TabPanel,
   Tabs,
-} from "prava-ui";
+} from "@pravalabs/ui";
 import { useState, type CSSProperties } from "react";
 import { docs } from "../registry";
 import { CodeBlock, CopyButton } from "../ui/CodeBlock";
@@ -16,9 +16,9 @@ import { ArrowIcon, CheckIcon } from "../ui/icons";
 import { Catalogue } from "./Catalogue";
 import { Specimen } from "./Specimen";
 
-const INSTALL = "npm install prava-ui@next react react-dom";
+const INSTALL = "npm install @pravalabs/ui react react-dom";
 
-const INVITE = `import { Button, Dialog, DialogClose, Input } from "prava-ui";
+const INVITE = `import { Button, Dialog, DialogClose, Input } from "@pravalabs/ui";
 
 export function InviteTeammate() {
   return (
@@ -176,7 +176,7 @@ export function Home() {
         <div className="hero__copy">
           <a className="eyebrow" href="#/get-started">
             <span className="eyebrow__dot" aria-hidden="true" />
-            1.0 release candidate · {docs.length} components
+            {docs.length} components · MIT licensed
           </a>
           <h1>
             React components that <em>look finished</em>.
@@ -194,7 +194,7 @@ export function Home() {
           </div>
           <div className="hero__actions">
             <Button href="#/get-started" size="lg" endIcon={<ArrowIcon />}>
-              Get started
+              Get started 
             </Button>
             <Button href="#/components" size="lg" variant="outline">
               Browse components

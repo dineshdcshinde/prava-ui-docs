@@ -1,11 +1,11 @@
-import { Button, Stack } from "prava-ui";
+import { Button, Stack } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Stack",
   group: "Layout",
   description: "Lays children out in a row or column with consistent gaps.",
-  importPath: "prava-ui/stack",
+  importPath: "@pravalabs/ui/stack",
   examples: [
     {
       title: "Horizontal, justified between",

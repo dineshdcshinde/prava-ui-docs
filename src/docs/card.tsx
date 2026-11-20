@@ -1,11 +1,11 @@
-import { Button, Card, CardContent, CardFooter, CardHeader } from "prava-ui";
+import { Button, Card, CardContent, CardFooter, CardHeader } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Card",
   group: "Layout",
   description: "Groups related content on a raised surface.",
-  importPath: "prava-ui/card",
+  importPath: "@pravalabs/ui/card",
   examples: [
     {
       title: "Header, content, footer",

@@ -1,11 +1,11 @@
-import { Input, Stack } from "prava-ui";
+import { Input, Stack } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Input",
   group: "Forms",
   description: "A single-line text field with label, help text, and validation message.",
-  importPath: "prava-ui/input",
+  importPath: "@pravalabs/ui/input",
   examples: [
     {
       title: "Basic",

@@ -1,4 +1,4 @@
-import { Alert, Button } from "prava-ui";
+import { Button } from "@pravalabs/ui";
 import { CodeBlock } from "../ui/CodeBlock";
 import { ArrowIcon } from "../ui/icons";
 
@@ -40,21 +40,16 @@ export function GetStarted() {
           </p>
         </header>
 
-        <Alert tone="info" title="Release candidate">
-          The API is close to final, but it can still change before 1.0.0.
-        </Alert>
-
         <section id="install" className="step">
           <span className="step__n">1</span>
           <div>
             <h2>Install</h2>
+            <p>Run this in your React project:</p>
+            <CodeBlock lang="sh" code="npm install @pravalabs/ui react react-dom" />
             <p>
-              Prava UI needs React and React DOM 18.2 or newer, including React 19. Install them together with Prava
-              UI:
+              That's all the setup. It works the same with Vite, Next.js or any other React app: there's no plugin,
+              config file or CSS import to add. Prava UI needs React 18.2 or newer, including React 19.
             </p>
-            <CodeBlock lang="sh" code="npm install prava-ui@next react react-dom" />
-            <p>If your project already has React 18.2 or newer, you only need Prava UI:</p>
-            <CodeBlock lang="sh" code="npm install prava-ui@next" />
           </div>
         </section>
 
@@ -64,7 +59,7 @@ export function GetStarted() {
             <h2>Use a component</h2>
             <p>Import it and render it. Its styles come with it, and it inherits your app's font.</p>
             <CodeBlock
-              code={`import { Button, Input } from "prava-ui";
+              code={`import { Button, Input } from "@pravalabs/ui";
 
 export function Signup() {
   return (
@@ -76,7 +71,7 @@ export function Signup() {
 }`}
             />
             <p>To be explicit about what you load, import one component at a time:</p>
-            <CodeBlock code={`import { Button } from "prava-ui/button";`} />
+            <CodeBlock code={`import { Button } from "@pravalabs/ui/button";`} />
           </div>
         </section>
 
@@ -126,7 +121,7 @@ export function Signup() {
               translation dependency, so it works with whichever library you already use.
             </p>
             <CodeBlock
-              code={`import { PravaProvider } from "prava-ui";
+              code={`import { PravaProvider } from "@pravalabs/ui";
 
 <PravaProvider direction="rtl" locale="ar" messages={{ close: "إغلاق" }}>
   <App />

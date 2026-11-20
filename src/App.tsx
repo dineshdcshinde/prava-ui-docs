@@ -1,4 +1,4 @@
-import { PravaProvider, Toaster } from "prava-ui";
+import { PravaProvider, Toaster } from "@pravalabs/ui";
 import { useEffect, useState } from "react";
 import { Catalogue } from "./pages/Catalogue";
 import { DocPage } from "./pages/DocPage";
@@ -151,7 +151,7 @@ export function App() {
 
         <footer className="footer">
           <span>
-            <Logo /> Prava UI · MIT licensed · 1.0 release candidate
+            <Logo /> Prava UI · MIT licensed
           </span>
           <span>This site is built with Prava UI components.</span>
         </footer>

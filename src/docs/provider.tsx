@@ -1,11 +1,11 @@
-import { Input, PravaProvider, Stack, Tab, TabList, TabPanel, Tabs } from "prava-ui";
+import { Input, PravaProvider, Stack, Tab, TabList, TabPanel, Tabs } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "PravaProvider",
   group: "Configuration",
   description: "Scopes direction, locale, messages, and theme to its subtree.",
-  importPath: "prava-ui/provider",
+  importPath: "@pravalabs/ui/provider",
   examples: [
     {
       title: "Nested RTL + Arabic messages",

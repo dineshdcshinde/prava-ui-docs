@@ -1,11 +1,11 @@
-import { Avatar, Stack } from "prava-ui";
+import { Avatar, Stack } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Avatar",
   group: "Display",
   description: "A person's image, with initials as the fallback.",
-  importPath: "prava-ui/avatar",
+  importPath: "@pravalabs/ui/avatar",
   examples: [
     {
       title: "Sizes and fallback",

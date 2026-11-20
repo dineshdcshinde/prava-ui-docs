@@ -1,4 +1,4 @@
-import { toast } from "prava-ui";
+import { toast } from "@pravalabs/ui";
 import { useState } from "react";
 import { highlight } from "./highlight";
 import { CheckIcon, CopyIcon } from "./icons";

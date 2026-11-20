@@ -1,4 +1,4 @@
-import { Container, Stack } from "prava-ui";
+import { Container, Stack } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 const box = { background: "var(--prava-color-surface-sunken)", padding: "0.5rem" };
@@ -7,7 +7,7 @@ export default {
   name: "Container",
   group: "Layout",
   description: "Centers content with a responsive max width.",
-  importPath: "prava-ui/container",
+  importPath: "@pravalabs/ui/container",
   examples: [
     {
       title: "Sizes",

@@ -17,7 +17,7 @@ import {
   Tabs,
   Tooltip,
   toast,
-} from "prava-ui";
+} from "@pravalabs/ui";
 import { useState, type ReactNode } from "react";
 import { DotsIcon } from "../ui/icons";
 

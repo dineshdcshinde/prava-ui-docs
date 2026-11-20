@@ -1,11 +1,11 @@
-import { Spinner, Stack } from "prava-ui";
+import { Spinner, Stack } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Spinner",
   group: "Feedback",
   description: "An indeterminate loading indicator.",
-  importPath: "prava-ui/spinner",
+  importPath: "@pravalabs/ui/spinner",
   examples: [
     {
       title: "Variants",

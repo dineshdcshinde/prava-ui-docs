@@ -1,11 +1,11 @@
-import { Accordion, AccordionItem } from "prava-ui";
+import { Accordion, AccordionItem } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Accordion",
   group: "Navigation",
   description: "Shows and hides sections of related content.",
-  importPath: "prava-ui/accordion",
+  importPath: "@pravalabs/ui/accordion",
   examples: [
     {
       title: "Single",

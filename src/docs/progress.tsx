@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Progress, Stack } from "prava-ui";
+import { Progress, Stack } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 function Animated() {
@@ -15,7 +15,7 @@ export default {
   name: "Progress",
   group: "Feedback",
   description: "Shows determinate or indeterminate task progress.",
-  importPath: "prava-ui/progress",
+  importPath: "@pravalabs/ui/progress",
   examples: [
     {
       title: "Determinate and indeterminate",

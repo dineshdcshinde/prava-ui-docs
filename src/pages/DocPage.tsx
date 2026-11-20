@@ -1,4 +1,4 @@
-import { Accordion, AccordionItem, PravaProvider, Select } from "prava-ui";
+import { Accordion, AccordionItem, PravaProvider, Select } from "@pravalabs/ui";
 import { useState } from "react";
 import { go } from "../router";
 import { docs, type Example, type RegisteredDoc } from "../registry";
@@ -132,7 +132,7 @@ export function DocPage({ doc }: { doc: RegisteredDoc }) {
           <h1>{doc.name}</h1>
           <p className="doc__lede">{doc.description}</p>
           <div className="doc__imports">
-            <CodeBlock compact code={`import { ${names} } from "prava-ui";`} />
+            <CodeBlock compact code={`import { ${names} } from "@pravalabs/ui";`} />
             <span className="doc__or">or, one component at a time</span>
             <CodeBlock compact code={`import { ${names} } from "${doc.importPath}";`} />
           </div>

@@ -1,11 +1,11 @@
-import { Card, CardContent, Grid } from "prava-ui";
+import { Card, CardContent, Grid } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Grid",
   group: "Layout",
   description: "A responsive grid with fixed columns or auto-fit by minimum width.",
-  importPath: "prava-ui/grid",
+  importPath: "@pravalabs/ui/grid",
   examples: [
     {
       title: "Auto-fit (resize the window)",

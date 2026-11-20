@@ -1,11 +1,11 @@
-import { Stack, Switch } from "prava-ui";
+import { Stack, Switch } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Switch",
   group: "Forms",
   description: "Turns a setting on or off immediately.",
-  importPath: "prava-ui/switch",
+  importPath: "@pravalabs/ui/switch",
   examples: [
     {
       title: "States",

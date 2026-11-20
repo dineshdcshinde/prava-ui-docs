@@ -1,11 +1,11 @@
-import { Button, Stack } from "prava-ui";
+import { Button, Stack } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Button",
   group: "Forms",
   description: "Triggers an action, or navigates when given an href.",
-  importPath: "prava-ui/button",
+  importPath: "@pravalabs/ui/button",
   examples: [
     {
       title: "Variants",

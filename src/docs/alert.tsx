@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Alert, Button, Stack } from "prava-ui";
+import { Alert, Button, Stack } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 function Dismissible() {
@@ -19,7 +19,7 @@ export default {
   name: "Alert",
   group: "Feedback",
   description: "An inline message about status or a required action.",
-  importPath: "prava-ui/alert",
+  importPath: "@pravalabs/ui/alert",
   examples: [
     {
       title: "Tones",

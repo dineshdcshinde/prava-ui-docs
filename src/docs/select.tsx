@@ -1,4 +1,4 @@
-import { Select, Stack } from "prava-ui";
+import { Select, Stack } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 const fruits = [
@@ -12,7 +12,7 @@ export default {
   name: "Select",
   group: "Forms",
   description: "Choose one or many options from a list, with optional search and groups.",
-  importPath: "prava-ui/select",
+  importPath: "@pravalabs/ui/select",
   examples: [
     {
       title: "Single",

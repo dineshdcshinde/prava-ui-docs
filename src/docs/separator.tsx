@@ -1,11 +1,11 @@
-import { Separator, Stack } from "prava-ui";
+import { Separator, Stack } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Separator",
   group: "Layout",
   description: "A visual or semantic divider between content.",
-  importPath: "prava-ui/separator",
+  importPath: "@pravalabs/ui/separator",
   examples: [
     {
       title: "Horizontal and vertical",

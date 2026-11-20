@@ -1,11 +1,11 @@
-import { Avatar, Badge, Stack } from "prava-ui";
+import { Avatar, Badge, Stack } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Badge",
   group: "Display",
   description: "A short status label, standalone or anchored to another element.",
-  importPath: "prava-ui/badge",
+  importPath: "@pravalabs/ui/badge",
   examples: [
     {
       title: "Tones",
@@ -20,7 +20,7 @@ export default {
     {
       title: "Anchored",
       render: () => (
-        <Badge content="3" tone="danger" placement="top-end">
+        <Badge content={3} tone="danger" placement="top-end">
           <Avatar firstName="Asha" lastName="Rao" />
         </Badge>
       ),

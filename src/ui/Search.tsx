@@ -1,4 +1,4 @@
-import { Dialog } from "prava-ui";
+import { Dialog } from "@pravalabs/ui";
 import { useEffect, useMemo, useState } from "react";
 import { go } from "../router";
 import { docs } from "../registry";

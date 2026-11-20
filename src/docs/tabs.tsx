@@ -1,4 +1,4 @@
-import { Tab, TabList, TabPanel, Tabs } from "prava-ui";
+import { Tab, TabList, TabPanel, Tabs } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 const Demo = ({ orientation }: { orientation: "horizontal" | "vertical" }) => (
@@ -20,7 +20,7 @@ export default {
   name: "Tabs",
   group: "Navigation",
   description: "Switches between panels; arrow keys follow direction in RTL.",
-  importPath: "prava-ui/tabs",
+  importPath: "@pravalabs/ui/tabs",
   examples: [
     { title: "Horizontal", render: () => <Demo orientation="horizontal" /> },
     { title: "Vertical", render: () => <Demo orientation="vertical" /> },

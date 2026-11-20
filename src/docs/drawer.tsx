@@ -1,11 +1,11 @@
-import { Button, Drawer, DrawerClose, Stack } from "prava-ui";
+import { Button, Drawer, DrawerClose, Stack } from "@pravalabs/ui";
 import type { ComponentDoc } from "../registry";
 
 export default {
   name: "Drawer",
   group: "Overlays",
   description: "A dialog that slides in from an edge; start/end follow direction.",
-  importPath: "prava-ui/drawer",
+  importPath: "@pravalabs/ui/drawer",
   examples: [
     {
       title: "Placements",
