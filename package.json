@@ -1,6 +1,6 @@
 {
   "name": "prava-ui-docs",
-  "private": true,
+  "private": false,
   "type": "module",
   "scripts": {
     "dev": "vite",
